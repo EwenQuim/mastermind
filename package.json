@@ -1,0 +1,35 @@
+{
+  "name": "mastermind",
+  "version": "0.3.0",
+  "author": "feust <ewen.quimerch@gmail.com>",
+  "description": "A simple web implementation of the MasterMind Game.",
+  "contributors": [
+    {
+      "name": "feust",
+      "email": "ewen.quimerch@gmail.com"
+    }
+  ],
+  "scripts": {
+    "start": "node mastermind.js",
+    "test": "echo Testing goes here",
+    "predeploy": "echo This will be run before deploying the app",
+    "postdeploy": "echo This will be run after deploying the app"
+  },
+  "main": "./lib/http-server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EwenQuim/mastermind.git"
+  },
+  "keywords": [
+    "mastermind"
+  ],
+  "dependencies": {
+    "cookie-session": "^1.4.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  },
+  "analyze": false,
+  "engines": {
+    "node": ">=0.6"
+  }
+}
