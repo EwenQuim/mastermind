@@ -31,7 +31,6 @@ on en crée une vide sous forme d'array avant la suite */
 
 /* On ajoute un élément à la todolist */
 .post('/m/try/', urlencodedParser, function(req, res) {
-    console.log("\nA honest try below !");
     if (req.body.newtry != '') {
         req.session.listTries.push([req.body.newtry, fn.response(req.body.newtry, req.session.guess)]);
     }
